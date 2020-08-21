@@ -16,8 +16,6 @@ The word 'wrong' is completely meaningless when it comes to describing the way c
 
 Think. Will the opinion of others hinder your ability to solve the problems in your day-to-day life?
 
-![Over-the-top Swiss army knife. A visual aid depicting not ideal, the convoluted application that still is useful](/images/swilssarmyknife.webp "Over-the-top Swiss army knife")
-
 ![Over-the-top Swiss army knife. A visual aid depicting not ideal, the convoluted application that still is useful](https://cdn.hashnode.com/res/hashnode/image/upload/v1598021784109/MPLLYit4o.png "Over-the-top Swiss army knife")
 
 Some argue that using specific language, framework or pattern will allow you to make fewer mistakes. This is misguided. It is with real complexity and a high volume of code where real problems arise. Difficulties come from the sheer amount of code and inter-connection within it. Regardless of the language or methodologies you use.
@@ -27,8 +25,6 @@ All these patterns, frameworks, etc. help you to bootstrap your project at the v
 In contrast, you may have a codebase with the line count approaching 1 million. Even if those lines are written using the most ideal programming language, you still risk having problems. For example, you may have structured your code without proper separation. The code may also have some convoluted logic. The language choice or use of functional programming vs OOP will not save you from problems. When the complexity of the application raises, the significance of those choices approaches zero.
 
 The bigger the project, the more important it becomes to have sensible architecture and separation of elements in your code.
-
-![Maze. Used as a visual aid to show complicated application](/images/maze.jpg "Maze")
 
 ![Maze. Used as a visual aid to show complicated application](https://cdn.hashnode.com/res/hashnode/image/upload/v1598021819849/WhaFcs8bK.png "Maze")
 
