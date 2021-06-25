@@ -62,31 +62,7 @@ Navigate to [localhost:4200/swagger](localhost:4200/swagger) to see the SwaggerU
 > Note: your port may be different
 
 ## Bonus: Customisation
-I prefer my UI’s dark. So, when I am presented with a predominantly white screen from the default theme, I immediately want to change it.
-Luckily SwaggerUI supports CSS injection.
-
-Here are the tweaks that we need to make
-### Enable support for static files
-```CSharp
-app.UseStaticFiles();
-```
-### Add folder structure with custom CSS
-```
-wwwroot/
-   └──swagger-ui/
-      └── SwaggerDark.css
-```
-![Folder structure and location of SwaggerDark.css](https://cdn.hashnode.com/res/hashnode/image/upload/v1598982216244/9OHU5YoJd.png)
-### Inject custom CSS
-Now we can inject the custom CSS with `InjectStylesheet()`
-```CSharp
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint(“/ swagger / v1 / swagger.json”, “MyAPI”);
-    c.InjectStylesheet(“/ swagger - ui / SwaggerDark.css”);
-});
-```
-You’ve read till the end, so as a thank you here’s the link to the dark theme I mentioned. It even comes with a dark scroll bar and custom drop-down arrows.
-https://github.com/Amoenus/SwaggerDark/
+Now that you have Swagger configured, you might want to change the default theme.
+You can learn how to do this in this  [blog post](https://amoenus.dev/swagger-dark-theme) 
 
 Did you have any questions or feedback? Please share them in the comments 🤗
