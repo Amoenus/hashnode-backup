@@ -63,6 +63,6 @@ Navigate to [localhost:4200/swagger](localhost:4200/swagger) to see the SwaggerU
 
 ## Bonus: Customisation
 Now that you have Swagger configured, you might want to change the default theme.
-You can learn how to do this in this  [blog post](https://amoenus.dev/swagger-dark-theme) 
+You can learn how to do this in this [blog post](https://amoenus.dev/swagger-dark-theme) 
 
 Did you have any questions or feedback? Please share them in the comments 🤗
