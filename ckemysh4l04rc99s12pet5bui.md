@@ -11,9 +11,9 @@ To enable swagger integration for your .NET Core Web API project you will need t
 
 ## Changes for `Startup.cs`
 ### Installing Swagger
-From your project folder install the Swagger Nuget package (5.5.1 for this instance)
+From your project folder install the Swagger Nuget package (6.1.4 for this instance)
 ```Terminal
-dotnet add package Swashbuckle.AspNetCore.Swagger --version 5.5.1
+dotnet add package Swashbuckle.AspNetCore --version 6.1.4
 ```
 ### Using statement
 ```CSharp
@@ -25,10 +25,10 @@ In the `ConfigureServices()` method you should add
 services.AddMvc();
 services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc(“v1”, new OpenApiInfo
+    c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = “My Awesome API”,
-        Version = “v1”
+        Title = "My Awesome API",
+        Version = "v1"
     });
 });
 ```
@@ -38,7 +38,7 @@ In the `Configure()` method you should add
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint(“/ swagger / v1 / swagger.json”, “My Awesome API V1”);
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Awesome API V1");
 });
 ```
 I prefer to enable it only for development
@@ -49,7 +49,7 @@ if (env.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint(“/ swagger / v1 / swagger.json”, “My Awesome API V1”);
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Awesome API V1");
     });
 }
 ```
